@@ -1,0 +1,17 @@
+Funcionales:
+
+-	La cámara de videocontrol vial debe medir la velocidad con la que los autos pasan por una calle.
+
+-	Cada cámara debe detectar automáticamente al vehículo cuando pasa y enviar al sistema los siguientes datos: fecha y hora, id de la cámara, patente y velocidad.
+
+-	El paso de cada vehículo debe registrarse en el sistema.
+
+-	Si la velocidad es mayor a 70km/h, el sistema debe enviar los datos a una API que se encargará de guardarlos en una base de datos y enviar un correo con los datos que envió la cámara a la cuenta "avisos@ciudad".
+
+-	Si la velocidad es mayor a 100km/h, el sistema debe enviar los datos a una API que se encargará de guardarlos en una base de datos, enviar un correo con los datos que envió la cámara a la cuenta "alertas@ciudad" y enviar, 3 veces, los datos recibidos por la cámara a una impresora para que sean impresos.
+
+No funcionales:
+
+-	El sistema debe funcionar 24/7.
+
+-	Cada cámara debe tener un id, una descripción, coordenadas x e y de su ubicación, dirección IP y modelo de la cámara.

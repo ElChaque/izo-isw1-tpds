@@ -1,0 +1,29 @@
+Casos de Uso
+
+Caso de uso: cámara de video control vial
+Autor: Cámara (Primario)
+precondición: - - -
+
+Camino Básico:
+
+1-La cámara envía los datos y su parámetros al sistema.
+2-El sistema verifica que la velocidad es mayor a 70 o 100 km/h.
+
+
+Camino Alternativo:
+
+2.a.1- El sistema confirma que la velocidad no es mayor a 70 km/h.
+2.a.2- El sistema no hace nada. vuelve al paso 1.
+
+2.b.1-El sistema confirma que la velocidad es mayor a 70 km/h.
+2.b.2-El sistema envía los datos a una API que se encargará de guardarlos en una base de datos.
+2.b.3-El sistema envía un correo con los datos que envió la cámara a la cuenta "avisos@ciudad". Vuelve al paso 1.
+
+2.c.1-El sistema confirma que la velocidad es mayor a 100 km/h.
+2.c.2-El sistema envía los datos a una API que se encargará de guardarlos en una base de datos.
+2.c.3-El sistema envía un correo con los datos que envió la cámara a la cuenta "avisos@ciudad".
+2.c.4- El sistema envía, 3 veces, los datos recibidos por la cámara a una impresora para que sean impresos. Vuelve al paso 1.
+
+Escenario de éxito: El sistema pudo guardar los datos del vehículo.
+
+Escenario de fracaso: El sistema no pudo guardar los datos del vehículo por no cumplir la condición de la velocidad.

@@ -1,0 +1,9 @@
+Diccionario de Datos
+
+Vehículo: DatosPatente + Velocidad.
+
+Cámara: ID + Descripc. + Coord. + Ubi. + Direc. ID + y Modelo.
+
+Ciudad: 0{CantidadCamara}*
+
+SistemaCam: Fecha + Hora.

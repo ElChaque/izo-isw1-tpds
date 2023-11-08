@@ -1,0 +1,21 @@
+Reglas de negocios
+
+Hecho:
+-	La cámara de videocontrol vial mide la velocidad de los vehículos que pasan por una calle.
+-	Cada cámara detecta automáticamente al vehículo cuando pasa y envía al sistema los siguientes datos: fecha y hora, id de la cámara, patente y velocidad.
+Restricción:
+-	Si la velocidad es mayor a 70 km/h, el sistema debe enviar los datos a una API que se encargará de guardarlos en una base de datos
+ y enviar un correo con los datos que envió la cámara a la cuenta "avisos@ciudad".
+
+-	Si la velocidad es mayor a 100km/h, el sistema debe enviar los datos a una API que se encargará de guardarlos en una base de datos, enviar un correo con los datos 
+que envió la cámara a la cuenta "alertas@ciudad" y enviar, 3 veces, los datos recibidos por la cámara a una impresora para que sean impresos.
+
+Acción disparadora:
+- 	La detección de un vehículo por parte de la cámara y el envío de los datos al sistema.
+
+Cálculo:
+-	El cálculo se realiza para determinar si la velocidad del vehículo es mayor a 70 km/h o mayor a 100 km/h.
+
+Inferencias:
+- 	El sistema recibe los datos de un vehículo que pasó, el sistema realiza distintas.
+
